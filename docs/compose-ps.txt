@@ -1,0 +1,5 @@
+$ docker compose ps
+
+NAME                           IMAGE                        COMMAND                  SERVICE   CREATED              STATUS                        PORTS
+pruebas_docker_compose-app-1   pruebas_docker_compose-app   "uvicorn app.main:ap…"   app       9 seconds ago        Up 8 seconds                  0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+pruebas_docker_compose-db-1    postgres:16                  "docker-entrypoint.s…"   db        About a minute ago   Up About a minute (healthy)   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
