@@ -1,0 +1,12 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-8.3.4, pluggy-1.6.0 -- /usr/local/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /app
+plugins: anyio-4.13.0
+collecting ... collected 4 items / 1 deselected / 3 selected
+
+tests/test_main.py::test_crear_tarea PASSED                              [ 33%]
+tests/test_main.py::test_listar_tareas PASSED                            [ 66%]
+tests/test_main.py::test_eliminar_tarea PASSED                           [100%]
+
+======================= 3 passed, 1 deselected in 0.43s ========================

@@ -1,0 +1,3 @@
+REPOSITORY:TAG                                       IMAGE ID       SIZE
+pruebas_docker_compose-app:latest                    3247b7d02738   322MB
+mi-app:v1                                            3c58be1833ee   322MB

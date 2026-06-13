@@ -1,0 +1,6 @@
+710380c  2026-06-12 21:55  docs: README y salidas de los entregables
+85d8c7e  2026-06-12 21:30  feat: endpoint para obtener una tarea por id
+a86bcc0  2026-06-12 20:58  test: pruebas unitarias de los endpoints
+2f1e368  2026-06-12 20:25  feat: docker-compose con app y postgres
+404c40f  2026-06-12 19:50  build: Dockerfile basado en python:3.12-slim
+080b8c9  2026-06-12 19:08  feat: API de tareas con FastAPI y PostgreSQL

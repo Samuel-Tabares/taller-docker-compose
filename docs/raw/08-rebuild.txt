@@ -1,0 +1,56 @@
+ Image pruebas_docker_compose-app Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 572B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 246B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 0.7s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 11.01kB 0.0s done
+#5 DONE 0.0s
+
+#6 [1/5] FROM docker.io/library/python:3.12-slim@sha256:a39549e211a16149edf74e5fdc9ef03a6767e46cd987c5048b6659b6c9904c94
+#6 resolve docker.io/library/python:3.12-slim@sha256:a39549e211a16149edf74e5fdc9ef03a6767e46cd987c5048b6659b6c9904c94 0.0s done
+#6 DONE 0.0s
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] COPY requirements.txt .
+#8 CACHED
+
+#9 [4/5] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [5/5] COPY . .
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers 0.0s done
+#11 exporting manifest sha256:7e47f859ed00e1f0645b4b9eb05b0da1f1b9367baaa6acd8965b5006b34213a6 done
+#11 exporting config sha256:c848cfc1c7a8d93cf9edb5286d39493856c42afb9b2fbaff1a2e77ab1f0a4120 done
+#11 exporting attestation manifest sha256:12f5955278d6bb261e9eac7f46b2aad9257a975e23ff314a21cacd66cf1e27a7 0.0s done
+#11 exporting manifest list sha256:3247b7d027389cdef293f30061b32438661e928f451720385e8fc1d4257e650b done
+#11 naming to docker.io/library/pruebas_docker_compose-app:latest done
+#11 unpacking to docker.io/library/pruebas_docker_compose-app:latest 0.0s done
+#11 DONE 0.1s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image pruebas_docker_compose-app Built 
+ Container pruebas_docker_compose-db-1 Running 
+ Container pruebas_docker_compose-app-1 Recreate 
+ Container pruebas_docker_compose-app-1 Recreated 
+ Container pruebas_docker_compose-db-1 Waiting 
+ Container pruebas_docker_compose-db-1 Healthy 
+ Container pruebas_docker_compose-app-1 Starting 
+ Container pruebas_docker_compose-app-1 Started 
