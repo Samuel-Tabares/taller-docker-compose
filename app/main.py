@@ -36,6 +36,14 @@ def listar_tareas(db: Session = Depends(get_db)) -> list[Tarea]:
     return db.query(Tarea).all()
 
 
+@app.get("/tareas/{tarea_id}", response_model=TareaOut)
+def obtener_tarea(tarea_id: int, db: Session = Depends(get_db)) -> Tarea:
+    tarea = db.query(Tarea).filter(Tarea.id == tarea_id).first()
+    if tarea is None:
+        raise HTTPException(status_code=404, detail="Tarea no encontrada")
+    return tarea
+
+
 @app.delete("/tareas/{tarea_id}", status_code=204)
 def eliminar_tarea(tarea_id: int, db: Session = Depends(get_db)) -> None:
     tarea = db.query(Tarea).filter(Tarea.id == tarea_id).first()
